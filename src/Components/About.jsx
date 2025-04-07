@@ -16,11 +16,14 @@ const About = () => {
         <div className="row g-5 align-items-center">
           <div className="col-lg-6">
             <p className="section-title text-secondary">About Us<span></span></p>
-            <h1 className="mb-5">#1 Digital solution with 10 years of experience</h1>
+            <h1 className="mb-5">#1 Crafting Innovative Solutions for the Digital-First World</h1>
             <p className="mb-4">
-              Diam dolor diam ipsum et tempor sit. Aliqu diam amet diam et eos labore. Clita erat ipsum et lorem et sit, 
-              sed stet no labore lorem sit clita duo justo eirmod magna dolore erat amet
-            </p>
+            At our core, we are a creative digital agency driven by passion and innovation. We specialize in building stunning websites, high-performing mobile applications, intuitive UI/UX experiences, and impactful digital marketing strategies.
+
+With a team of skilled developers, designers, and marketers, we transform ideas into digital experiences that connect, engage, and grow. Whether you’re a startup looking to establish your online presence or an enterprise aiming to scale — we craft custom solutions tailored to your goals.
+
+Our mission is simple — to deliver digital excellence and help brands thrive in an ever-evolving digital landscape.
+               </p>
 
             {/* Skill 1 */}
             <div className="skill mb-4">
