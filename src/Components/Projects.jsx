@@ -4,12 +4,12 @@ import Layout from './Layout';
 const projectFilters = ['All', 'Web Design', 'Graphic Design'];
 
 const projectData = [
-  { img: 'img/portfolio-1.jpg', category: 'first', delay: '0.1s' },
-  { img: 'img/portfolio-2.jpg', category: 'second', delay: '0.3s' },
-  { img: 'img/portfolio-3.jpg', category: 'first', delay: '0.5s' },
-  { img: 'img/portfolio-4.jpg', category: 'second', delay: '0.1s' },
-  { img: 'img/portfolio-5.jpg', category: 'first', delay: '0.3s' },
-  { img: 'img/portfolio-6.jpg', category: 'second', delay: '0.5s' },
+  { img: 'https://plus.unsplash.com/premium_photo-1661293879952-c5c093282801?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8cHJvamVjdHxlbnwwfHwwfHx8MA%3D%3D', category: 'first', delay: '0.1s' },
+  { img: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByb2plY3R8ZW58MHx8MHx8fDA%3D', category: 'second', delay: '0.3s' },
+  { img: 'https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHByb2plY3R8ZW58MHx8MHx8fDA%3D', category: 'first', delay: '0.5s' },
+  { img: 'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fHByb2plY3R8ZW58MHx8MHx8fDA%3D', category: 'second', delay: '0.1s' },
+  { img: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzl8fHByb2plY3R8ZW58MHx8MHx8fDA%3D', category: 'first', delay: '0.3s' },
+  { img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D', category: 'second', delay: '0.5s' },
 ];
 
 const Projects = () => {

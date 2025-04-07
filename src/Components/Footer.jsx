@@ -1,12 +1,25 @@
 import React from 'react';
 
 const galleryImages = [
-  '../assets/img/portfolio-1.jpg',
-  'img/portfolio-2.jpg',
-  'img/portfolio-3.jpg',
-  'img/portfolio-4.jpg',
-  'img/portfolio-5.jpg',
-  'img/portfolio-6.jpg',
+  {
+    img: 'https://plus.unsplash.com/premium_photo-1661293879952-c5c093282801?w=600&auto=format&fit=crop&q=60',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&auto=format&fit=crop&q=60',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1579389083078-4e7018379f7e?w=600&auto=format&fit=crop&q=60',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?w=600&auto=format&fit=crop&q=60',
+  },
+  {
+    img: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&auto=format&fit=crop&q=60',
+  },
+    
+  { 
+    img: 'https://images.unsplash.com/photo-1611926653458-09294b3142bf?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRpZ2l0YWwlMjBtYXJrZXRpbmd8ZW58MHx8MHx8fDA%3D'  
+  }
 ];
 
 const Footer = () => {
@@ -44,7 +57,7 @@ const Footer = () => {
             <div className="row g-2">
               {galleryImages.map((img, idx) => (
                 <div className="col-4" key={idx}>
-                  <img className="img-fluid" src={img} alt={`Gallery ${idx + 1}`} />
+                  <img className="img-fluid" src={img.img} alt={`Gallery ${idx + 1}`} />
                 </div>
               ))}
             </div>
@@ -53,7 +66,7 @@ const Footer = () => {
           {/* Newsletter */}
           <div className="col-md-6 col-lg-3">
             <p className="section-title text-white h5 mb-4">Newsletter<span></span></p>
-            <p>Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulpu</p>
+            <p>Subscribe to get latest updates on web, mobile, and digital marketing trends.</p>
             <div className="position-relative w-100 mt-3">
               <input
                 className="form-control border-0 rounded-pill w-100 ps-4 pe-5"
@@ -77,7 +90,7 @@ const Footer = () => {
         <div className="copyright">
           <div className="row">
             <div className="col-md-6 text-center text-md-start mb-3 mb-md-0">
-               Designed & Developed by Keerthana Duraisamy &copy; 2025
+              Designed & Developed by Keerthana Duraisamy &copy; 2025
             </div>
             <div className="col-md-6 text-center text-md-end">
               <div className="footer-menu">

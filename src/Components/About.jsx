@@ -1,5 +1,5 @@
 import React from 'react';
-import aboutImg from '../assets/img/about.png'; // Update the path as per your structure
+// import aboutImg from '../assets/img/about.png'; // Update the path as per your structure
 import Layout from './Layout';
 import Features from './Feature';
 import TeamSection from './Team';
@@ -85,8 +85,8 @@ Our mission is simple — to deliver digital excellence and help brands thrive i
           </div>
 
           {/* Image */}
-          <div className="col-lg-6">
-            <img className="img-fluid" src={aboutImg} alt="About Us" />
+          <div className="col-lg-6 ">
+            <img className="img-fluid" src="https://img.freepik.com/free-vector/modern-perspective-technology-background_1035-9593.jpg?uid=R100968296&ga=GA1.1.1864763905.1732424872&semt=ais_hybrid&w=740" alt="About Us" />
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from './Layout';
 import Testimonial from './Testimonial';
+import Newsletter from './Newsletter';
 
 const services = [
   {
@@ -74,6 +75,7 @@ const Service = () => {
       </div>
     </div>
     <Testimonial/>
+    <Newsletter/>
     </Layout>
     </>
   );
