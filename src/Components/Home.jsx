@@ -8,10 +8,12 @@ import Footer from './Footer';
 import Projects from './Projects';
 import Testimonial from './Testimonial';
 import Features from './Feature';
+import Navbar from './Navbar';
 
 const Home = () => {
   return (
     <>
+    <Navbar/>
       <section
         className="hero-section"
         style={{
