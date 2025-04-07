@@ -16,10 +16,11 @@ const Contact = () => {
           <div className="col-lg-7">
             <div className="wow fadeInUp" data-wow-delay="0.3s">
               <p className="text-center mb-4">
-                The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.{" "}
-                <a href="https://htmlcodex.com/contact-form" target="_blank" rel="noopener noreferrer">
-                  Download Now
-                </a>.
+              
+              <h2 className="mb-4">Let’s Work Together</h2>
+        <p className="mb-4">
+          Have a project in mind or just want to say hi? We’re always open to new ideas, collaborations, or opportunities. Drop us a message and we’ll get back to you as soon as possible.
+        </p>
               </p>
               <form>
                 <div className="row g-3">
