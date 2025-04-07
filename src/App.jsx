@@ -10,6 +10,7 @@ import { useEffect, useState } from 'react';
 import Projects from './Components/Projects';
 import Contact from './Components/Contact';
 import AboutLayout from './Components/AboutLayout';
+import NotFound from './Components/404';
 
 function App() {
   const [loading, setLoading] = useState(true); // ✅ set true initially
@@ -47,7 +48,8 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/project" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
-        
+        <Route path="*" element={<NotFound />} />
+
         {/* Add other routes */}
       </Routes>
     </>
