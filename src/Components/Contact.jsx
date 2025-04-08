@@ -12,10 +12,7 @@ const fadeInUp = {
 const Contact = () => {
   return (
     <Layout  title="Contact" >
-      <Navbar />
-    
-
-      <motion.div
+       <motion.div
         className="container-xxl py-5"
         initial="hidden"
         whileInView="visible"
