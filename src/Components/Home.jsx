@@ -9,6 +9,7 @@ import Projects from './Projects';
 import Testimonial from './Testimonial';
 import Features from './Feature';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -35,31 +36,38 @@ const Home = () => {
     From stunning websites and mobile apps to captivating UI/UX design and result-driven digital marketing — we craft solutions that drive growth and make an impact.
   </p>
   <div className="d-flex justify-content-center justify-content-lg-start gap-3 flex-wrap">
-    <button
-      style={{
-        padding: '10px 20px',
-        background: '#ffc107',
-        border: 'none',
-        borderRadius: '5px',
-        color: '#000',
-        fontWeight: 'bold',
-      }}
-    >
-      Read More
-    </button>
-    <button
-      style={{
-        padding: '10px 20px',
-        background: '#fff',
-        color: '#000',
-        borderRadius: '5px',
-        border: 'none',
-        fontWeight: 'bold',
-      }}
-    >
-      Contact Us
-    </button>
-  </div>
+  <Link
+    to="/about"
+    style={{
+      padding: '10px 20px',
+      background: '#ffc107',
+      border: 'none',
+      borderRadius: '5px',
+      color: '#000',
+      fontWeight: 'bold',
+      textDecoration: 'none',
+      display: 'inline-block',
+    }}
+  >
+    Read More
+  </Link>
+  <Link
+    to="/contact"
+    style={{
+      padding: '10px 20px',
+      background: '#fff',
+      color: '#000',
+      borderRadius: '5px',
+      border: 'none',
+      fontWeight: 'bold',
+      textDecoration: 'none',
+      display: 'inline-block',
+    }}
+  >
+    Contact Us
+  </Link>
+</div>
+
 </div>
 
 {/* Hero Image */}
