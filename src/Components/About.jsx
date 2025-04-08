@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import Layout from './Layout';
 import Features from './Feature';
 import TeamSection from './Team';
@@ -6,17 +9,20 @@ import Testimonial from './Testimonial';
 import Facts from './Facts';
 
 const About = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1500, once: true });
+  }, []);
+
   return (
     <Layout title="About">
       <Features />
 
       {/* About Section */}
-      <div className="container-xxl py-5">
+      <div className="container-xxl py-5" data-aos="fade-up">
         <div className="container py-5 px-3 px-lg-5">
           <div className="row g-5 align-items-center">
-            
             {/* Content Column */}
-            <div className="col-lg-6">
+            <div className="col-lg-6" data-aos="fade-right">
               <p className="section-title text-secondary">About Us<span></span></p>
               <h1 className="mb-4">#1 Crafting Innovative Solutions for the Digital-First World</h1>
               <p className="mb-4">
@@ -35,7 +41,7 @@ const About = () => {
                 { label: 'SEO & Backlinks', percent: 90, color: 'secondary' },
                 { label: 'Design & Development', percent: 95, color: 'dark' },
               ].map((skill, index) => (
-                <div className="skill mb-4" key={index}>
+                <div className="skill mb-4" key={index} data-aos="fade-up" data-aos-delay={index * 200}>
                   <div className="d-flex justify-content-between">
                     <p className="mb-2">{skill.label}</p>
                     <p className="mb-2">{skill.percent}%</p>
@@ -59,7 +65,7 @@ const About = () => {
             </div>
 
             {/* Image Column */}
-            <div className="col-lg-6 text-center">
+            <div className="col-lg-6 text-center" data-aos="fade-left">
               <img
                 className="img-fluid rounded shadow-sm"
                 src="https://img.freepik.com/free-vector/modern-perspective-technology-background_1035-9593.jpg?uid=R100968296&ga=GA1.1.1864763905.1732424872&semt=ais_hybrid&w=740"

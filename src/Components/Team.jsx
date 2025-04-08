@@ -1,10 +1,11 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const teamMembers = [
   {
     name: 'John Doe',
     role: 'CEO & Founder',
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsOq7pFGh8JcSsWQ7QdTRKkqUC2nR0DHSktg&s',
+    image: 'data:image/jpeg;base64,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',
   },
   {
     name: 'Jessica Brown',
@@ -21,39 +22,51 @@ const teamMembers = [
 const TeamSection = () => {
   return (
     <div className="container-xxl py-5">
-      <div className="container py-5 px-lg-5">
-        <div>
-          <p className="section-title text-secondary justify-content-center">
-            <span></span>Our Team<span></span>
-          </p>
-          <h1 className="text-center mb-5">Our Team Members</h1>
-        </div>
-        <div className="row g-4">
-          {teamMembers.map((member, index) => (
-            <div className="col-lg-4 col-md-6" key={index}>
-              <div className="team-item bg-light rounded">
-                <div className="text-center border-bottom p-4">
-                  <img
-                    className="img-fluid rounded-circle mb-4"
-                    src={member.image}
-                    alt={member.name}
-                  />
-                  <h5>{member.name}</h5>
-                  <span>{member.role}</span>
-                </div>
-                <div className="d-flex justify-content-center p-4">
-                  <a className="btn btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
-                  <a className="btn btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
-                  <a className="btn btn-square mx-1" href="#"><i className="fab fa-instagram"></i></a>
-                  <a className="btn btn-square mx-1" href="#"><i className="fab fa-linkedin-in"></i></a>
-                </div>
+    <div className="container py-5 px-lg-5">
+      <div>
+        <p className="section-title text-secondary justify-content-center">
+          <span></span>Our Team<span></span>
+        </p>
+        <h1 className="text-center mb-5">Our Team Members</h1>
+      </div>
+      <div className="row g-4">
+        {teamMembers.map((member, index) => (
+          <motion.div
+            className="col-lg-4 col-md-6"
+            key={index}
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: index * 0.2 }}
+          >
+            <div className="team-item bg-light rounded">
+              <div className="text-center border-bottom p-4">
+                <img
+                  className="img-fluid rounded-circle mb-4"
+                  src={member.image}
+                  alt={member.name}
+                />
+                <h5>{member.name}</h5>
+                <span>{member.role}</span>
+              </div>
+              <div className="d-flex justify-content-center p-4">
+                <a className="btn btn-square mx-1" href="#"><i className="fab fa-facebook-f"></i></a>
+                <a className="btn btn-square mx-1" href="#"><i className="fab fa-twitter"></i></a>
+                <a className="btn btn-square mx-1" href="#"><i className="fab fa-instagram"></i></a>
+                <a className="btn btn-square mx-1" href="#"><i className="fab fa-linkedin-in"></i></a>
               </div>
             </div>
-          ))}
-        </div>
+          </motion.div>
+        ))}
       </div>
     </div>
+  </div>
   );
 };
 
 export default TeamSection;
+
+
+
+
+
+
